@@ -13,22 +13,19 @@ class Safe:
     def __init__(self, login, password):
         self.__login = login
         self.__password = password
-        self.content = []
+        self.__content = []
 
     def open(self, login, password):
         if login == self.__login and password == self.__password:
-            return tuple(self.content)
+            return tuple(self.__content)
         else:
             return False
 
     def save(self, login, password, content):
-        if not content:
-            return False
+        if login == self.__login and password == self.__password:
+            self.__content.append(content)
         else:
-            if login == self.__login and password == self.__password:
-                self.content.append(content)
-            else:
-                return False
+            return False
 
 
 safe = Safe("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy")
