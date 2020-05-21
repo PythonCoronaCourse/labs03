@@ -28,9 +28,9 @@ Zwróci False, jeśli login lub hasło są niepoprawne.
 Np.: 
 ```
 safe = Safe("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy")
-open = safe.save("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy", "abc")
-open = safe.save("ArkadiuszNornica", "złehasło")  # zwraca False
-open = safe.save("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy", 123)
+safe.save("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy", "abc")
+safe.save("ArkadiuszNornica", "złehasło")  # zwraca False
+safe.save("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy", 123)
 print(safe.open("ArkadiuszNornica", "złehasło"))  # printuje False
 print(safe.open("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy"))  # printuje ("abc",123)
 ``` 
