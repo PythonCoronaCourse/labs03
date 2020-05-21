@@ -35,3 +35,17 @@ safe.save("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy", 123)
 print(safe.open("ArkadiuszNornica", "złehasło"))  # printuje False
 print(safe.open("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy"))  # printuje ("abc",123)
 
+
+# zadanie nr 3
+def fizzbuzz(x):
+    if x%15 == 0:
+        return "FizzBuzz"
+    elif x%3 == 0:
+        return "Fizz"
+    elif x%5 == 0:
+        return "Buzz"
+    else:
+        return x
+
+for i in range(1, 21):
+    print(fizzbuzz(i))
