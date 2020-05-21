@@ -1,20 +1,20 @@
 class Safe:
-    def __init__(self, __login, __password):
-        self.__login = __login
-        self.__password = __password
-        self.__set = []
+    def __init__(self, login, password):
+        self.__login = login
+        self.__password = password
+        self.__lista = []
 
     def open(self, login, password):
         if login == self.__login and password == self.__password:
-            print(tuple(self.__set))
-            return tuple(self.__set)
+            print(tuple(self.__lista))
+            return tuple(self.__lista)
         else:
             print("Zle haslo kurwiu")
             return False
 
     def save(self, login, password, new_object):
         if login == self.__login and password == self.__password:
-            self.__set.append(new_object)
+            self.__lista.append(new_object)
         else:
             print("Zle haslo kurwiu")
             return False
