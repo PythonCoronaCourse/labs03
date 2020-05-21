@@ -34,3 +34,35 @@ safe.save("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy", 123)
 print(safe.open("ArkadiuszNornica", "złehasło"))  # printuje False
 print(safe.open("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy"))  # printuje ("abc",123)
 ``` 
+
+# zad 3
+
+FizzBuzz
+napisz funkcję, która przyjmuje liczbę i jeśli jest ona podzielna przez 3, zwraca "Fizz", jeśli jest podzielna przez 5, zwraca "Buzz", jeśli jest podzielna przez 3 i 5 zwraca "FizzBuzz".
+```
+for i in range(1, 21):
+  print(fizzbuzz(i))
+```
+efekt:
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
+```
