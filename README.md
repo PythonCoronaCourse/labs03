@@ -70,7 +70,7 @@ Buzz
 # DOMOWE:
 
 ## zadanie 4
-Napisz własną funkcję liczącą wystąpienia podstringa w stringu __nie używając metody count__.
+Napisz własną funkcję liczącą wystąpienia podstringa w stringu __nie używając metody count ani split__.
 
 np.:
 ```
