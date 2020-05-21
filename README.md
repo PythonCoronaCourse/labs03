@@ -38,7 +38,7 @@ print(safe.open("ArkadiuszNornica", "SzukamNornicyWMojejOkolicy"))  # printuje (
 # zad 3
 
 FizzBuzz
-napisz funkcję, która przyjmuje liczbę i jeśli jest ona podzielna przez 3, zwraca "Fizz", jeśli jest podzielna przez 5, zwraca "Buzz", jeśli jest podzielna przez 3 i 5 zwraca "FizzBuzz".
+napisz funkcję, która przyjmuje liczbę i jeśli jest ona podzielna przez 3, zwraca "Fizz", jeśli jest podzielna przez 5, zwraca "Buzz", jeśli jest podzielna przez 3 i 5 zwraca "FizzBuzz", w przeciwnym przypadku zwraca samą liczbę.
 ```
 for i in range(1, 21):
   print(fizzbuzz(i))
