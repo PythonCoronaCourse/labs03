@@ -78,7 +78,7 @@ my_count("mam kota Mamrota co lubi jeść szprota", "ota")  # zwraca 3
 ```
 
 ## zadanie 5
-Napisz skrypt, który wczytuje plik [zad03.txt](https://github.com/PythonCoronaCourse/labs03/blob/master/zad03.txt) i tworzy listę obiektów _Cat_ na podstawie linijek pliku i ustawia w nich pola "name", "age", "color".
+Napisz skrypt, który wczytuje plik [zad03.txt](https://github.com/PythonCoronaCourse/labs03/blob/master/zad03.txt) i tworzy listę obiektów klasy _Cat_ (musisz sam(a) utworzyć tę klasę) na podstawie linijek pliku i ustawia w nich pola "name", "age", "color".
 
 w efekcie można będzie zrobić:
 ```
