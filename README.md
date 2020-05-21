@@ -66,3 +66,49 @@ Fizz
 19
 Buzz
 ```
+
+# DOMOWE:
+
+## zadanie 4
+Napisz własną funkcję liczącą wystąpienia podstringa w stringu __nie używając metody count__.
+
+np.:
+```
+my_count("mam kota Mamrota co lubi jeść szprota", "ota")  # zwraca 3
+```
+
+## zadanie 5
+Napisz skrypt, który wczytuje plik `zad03.txt` i tworzy listę obiektów _Cat_ na podstawie linijek pliku i ustawia w nich pola "name", "age", "color".
+
+w efekcie można będzie zrobić:
+```
+... (wczytywanie pliku) ...
+for cat in cats:
+  print(cat.name, cat.age, cat.color)
+```
+wydrukuje:
+```
+Mruczek 6 bialy
+Puszek Okruszek 12 czarny
+Kardynal 21 zolty
+Grumper 4 szary
+```
+__TIP__: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
+
+## zadanie 6
+Napisz funkcję, która
+
+przyjmuję dwa argumenty:
+1. lista stringów
+1. string zawierający pojedynczą literę
+
+zwraca listę stringów podaną jako argument pierwszy, ale te elementy listy, które kończą się na literę podaną jako argument drugi mają dodany suffix "_bingo"
+
+np.:
+```
+bingify(["abc", "abca", "a", "cad", "baca", "bc"], "a")
+```
+zwraca:
+```
+["abc", "abca_bingo", "a_bingo", "cad", "baca_bingo", "bc"]
+```
