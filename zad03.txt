@@ -1,0 +1,4 @@
+Mruczek,6,bialy
+Puszek Okruszek,12,czarny
+Kardynal,21,zolty
+Grumper,4,szary
