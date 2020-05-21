@@ -12,22 +12,22 @@ print(do_shit("qwerty", ["we", "qr"]), "kurwo")
 
 # zadanie nr 2
 class Safe:
-    def __init__(self, login, __password):
-        self.login = login
+    def __init__(self, __login, __password):
+        self.__login = __login
         self.__password = __password
         self.content = []
 
-    def open(self, login, __password):
-        if login == self.login and __password == self.__password:
-            return self.content
+    def open(self, __login, __password):
+        if __login == self.__login and __password == self.__password:
+            return tuple(self.content)
         else:
             return False
 
-    def save(self, login, __password, content):
+    def save(self, __login, __password, content):
         if not content:
             return False
         else:
-            if login == self.login and __password == self.__password:
+            if __login == self.__login and __password == self.__password:
                 self.content.append(content)
             else:
                 return False
