@@ -53,15 +53,18 @@ for i in range(1, 21):
 
 
 # ------------------------------- zadanie nr 4 --------------------------------
-def count_shit(str_1, list_1):
+def count_shit(looked_thru, looked_for):
     counter = 0
-    for x in list_1:
-        if x in str_1:
+    for x in looked_for:
+        looked_thru_copy = looked_thru
+        while x in looked_thru_copy:
             counter += 1
+            position = looked_thru_copy.find(x) + len(x)
+            looked_thru_copy = looked_thru_copy[position:]
     return counter
 
 
-print(count_shit("mam kota Mamrota co lubi jeść szprota", "ota"))
+print(count_shit("mam kota Mamrota co lubi jeść szprota, koło płota się miota i robi am-am", ["ota", "am"]))
 
 
 # ------------------------------- zadanie nr 5 --------------------------------
